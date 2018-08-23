@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Scroll Drawing</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="wrapper">
+            <h1>SVG Scrolling Animations</h1>
+            <ul>
+                <li><a href="index.html">What is it?</a></li>
+                <li><a href="how.html">How to use?</a></li>
+                <li><a href="why.html">Why use?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <section class="step step1">
+            <h2>Step 1: Get your SVG</h2>
+            <div class="freeSvg">
+                <figure>
+                    <svg aria-hidden="true" data-prefix="fab" data-icon="font-awesome-flag" class="svg-inline--fa fa-font-awesome-flag fa-w-14"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M444.373 359.424c0 7.168-6.144 10.24-13.312 13.312-28.672 12.288-59.392 23.552-92.16 23.552-46.08 0-67.584-28.672-122.88-28.672-39.936 0-81.92 14.336-115.712 29.696-2.048 1.024-4.096 1.024-6.144 2.048v77.824c0 21.405-16.122 34.816-33.792 34.816-19.456 0-34.816-15.36-34.816-34.816V102.4C12.245 92.16 3.029 75.776 3.029 57.344 3.029 25.6 28.629 0 60.373 0s57.344 25.6 57.344 57.344c0 18.432-8.192 34.816-22.528 45.056v31.744c4.124-1.374 58.768-28.672 114.688-28.672 65.27 0 97.676 27.648 126.976 27.648 38.912 0 81.92-27.648 92.16-27.648 8.192 0 15.36 6.144 15.36 13.312v240.64z"></path></svg>
+                    <figcaption>Font Awesome</figcaption>
+                </figure>
+                <figure>
+                    <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 47.999997 60" version="1.1" x="0px" y="0px">
+                        <path style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.99999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+                            d="M 13,0 C 10.8048,0 9,1.8048 9,4 l 0,13 c 0,0.55228 0.4477,1 1,1 0.5523,0 1,-0.44772 1,-1 l 0,-7 26,0 0,7 c 0,0.55228 0.4477,1 1,1 0.5523,0 1,-0.44772 1,-1 L 39,4 C 39,1.8048 37.1952,0 35,0 Z m 0,2 22,0 c 1.1026,0 2,0.8973 2,2 l 0,4 -26,0 0,-4 c 0,-1.1027 0.8974,-2 2,-2 z m 9,2 c -0.554,0 -1,0.446 -1,1 0,0.554 0.446,1 1,1 l 4,0 C 26.554,6 27,5.554 27,5 27,4.446 26.554,4 26,4 Z m 4.994141,15.990234 c -0.255875,0.0017 -0.510378,0.101175 -0.705079,0.296875 l -2.291015,2.291016 -2.291016,-2.291016 c -0.3894,-0.3875 -1.022462,-0.3893 -1.414062,0 -0.3924,0.3905 -0.3904,1.025416 0,1.416016 l 2.292969,2.292969 -2.283204,2.292968 c -0.3904,0.390502 -0.3904,1.023563 0,1.414063 0.3908,0.3924 1.02241,0.3897 1.41211,0 l 2.289062,-2.289063 2.291016,2.291016 c 0.1829,0.184 0.430053,0.273203 0.689453,0.283203 0.2696,0.0042 0.531456,-0.100715 0.722656,-0.291015 0.3924,-0.3905 0.3904,-1.025516 0,-1.416016 l -2.292969,-2.292969 2.289063,-2.296875 c 0.3904,-0.3905 0.3904,-1.023562 0,-1.414062 -0.1958,-0.19255 -0.453109,-0.288822 -0.708984,-0.28711 z M 12.996094,20 c -2.1972,0 -4.0000002,1.8028 -4.0000002,4 0,2.1971 1.8028002,4 4.0000002,4 2.1972,0 4,-1.8029 4,-4 0,-2.1972 -1.8028,-4 -4,-4 z M 33,20 c -1.090703,0 -2,0.909297 -2,2 l 0,4 c 0,1.090703 0.909297,2 2,2 l 4,0 c 1.090703,0 2,-0.909297 2,-2 l 0,-4 c 0,-1.090703 -0.909297,-2 -2,-2 z m -20.003906,2 c 1.1163,0 2,0.8837 2,2 0,1.1163 -0.8837,2 -2,2 -1.1163,0 -2,-0.8837 -2,-2 0,-1.1163 0.8837,-2 2,-2 z M 33,22 l 4,0 0,4 -4,0 z m -23,8 c -0.5523,0 -1,0.44772 -1,1 l 0,13 c 0,2.1952 1.8048,4 4,4 l 22,0 c 2.1952,0 4,-1.8048 4,-4 l 0,-13 c 0,-0.55228 -0.4477,-1 -1,-1 -0.5523,0 -1,0.44772 -1,1 l 0,7 -26,0 0,-7 c 0,-0.55228 -0.4477,-1 -1,-1 z m 1,10 26,0 0,4 c 0,1.1027 -0.8974,2 -2,2 l -22,0 c -1.1026,0 -2,-0.8973 -2,-2 z m 13,2 c -0.552285,0 -1,0.447715 -1,1 0,0.552285 0.447715,1 1,1 0.552285,0 1,-0.447715 1,-1 0,-0.552285 -0.447715,-1 -1,-1 z"
+                            transform="translate(-1.9073486e-6,0)" /></svg>
+                    <figcaption>The Noun Project</figcaption>
+                </figure>
+                <figure>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 200.766 252.2625"
+                        enable-background="new 0 0 200.766 201.81" xml:space="preserve">
+                        <g display="none">
+                            <g display="inline">
+                                <circle fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" cx="100.011" cy="99.285" r="92.431"
+                                />
+                                <path fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" d="M165.977,177.244H34.045    c-6.885,0-12.516-5.633-12.516-12.514V32.798c0-6.884,5.631-12.515,12.516-12.515h131.932c6.885,0,12.516,5.631,12.516,12.515    V164.73C178.492,171.611,172.861,177.244,165.977,177.244z"
+                                />
+                                <path fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" d="M154.52,191.715H45.795    c-6.885,0-12.518-5.631-12.518-12.516V19.369c0-6.883,5.633-12.514,12.518-12.514H154.52c6.883,0,12.516,5.631,12.516,12.514    v159.83C167.035,186.084,161.402,191.715,154.52,191.715z"
+                                />
+                                <path fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" d="M179.926,166.035H20.096    c-6.885,0-12.516-5.633-12.516-12.517V44.791c0-6.883,5.631-12.514,12.516-12.514h159.83c6.885,0,12.516,5.631,12.516,12.514    v108.728C192.441,160.402,186.811,166.035,179.926,166.035z"
+                                />
+                                <circle fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" cx="100.157" cy="98.764"
+                                    r="41.065" />
+                                <rect x="0.426" y="-1.098" fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" width="199.723"
+                                    height="200.767" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="0.426" y1="-1.098" x2="200.148"
+                                    y2="199.669" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="0.426" y1="199.669" x2="200.148"
+                                    y2="-1.098" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="71.084" y1="-1.098" x2="70.824"
+                                    y2="199.669" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="100.418" y1="-1.098" x2="100.156"
+                                    y2="199.669" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="129.566" y1="-1.098" x2="129.307"
+                                    y2="199.669" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="0.426" y1="69.822" x2="200.148"
+                                    y2="69.301" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="0.426" y1="99.024" x2="200.148"
+                                    y2="98.504" />
+                                <line fill="#000000" stroke="#999999" stroke-width="1.0429" stroke-miterlimit="10" x1="0.148" y1="128.862" x2="199.873"
+                                    y2="128.34" />
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#000000" d="M171,188.81H29c-9.374,0-17-7.626-17-17v-142c0-9.374,7.626-17,17-17h142c9.374,0,17,7.626,17,17v142     C188,181.184,180.374,188.81,171,188.81z M29,22.81c-3.859,0-7,3.141-7,7v142c0,3.859,3.141,7,7,7h142c3.859,0,7-3.141,7-7v-142     c0-3.859-3.141-7-7-7H29z"
+                                    />
+                                </g>
+                                <g>
+                                    <path fill="#000000" d="M76.918,108.99l-6.944,21.033h-8.929l22.818-66.869h10.318L117,130.023h-9.227l-7.143-21.033H76.918z      M98.943,102.244l-6.646-19.247c-1.488-4.366-2.48-8.334-3.473-12.203h-0.199c-0.992,3.869-1.984,8.036-3.373,12.104     l-6.548,19.347H98.943z"
+                                    />
+                                    <path fill="#000000" d="M135.951,68.512c0,2.977-2.084,5.357-5.556,5.357c-3.175,0-5.259-2.381-5.259-5.357     s2.184-5.457,5.457-5.457C133.769,63.055,135.951,65.436,135.951,68.512z M126.229,130.023V82.005h8.73v48.019H126.229z"
+                                    />
+                                </g>
+                            </g>
+                        </g></svg>
+                    <figcaption>Illustrator</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="step step2">
+            <h2>Step 2: Create HTML, CSS, and JavaScript skeleton</h2>
+        </section>
+        <section class="step step3">
+            <h2>Step 3: Load the jQuery DrawSVG plugin</h2>
+            <a href="http://leocs.me/jquery-drawsvg/#features">Plugin Link</a>
+        </section>
+        <section class="step step4">
+            <h2>Step 4: Apply your styles</h2>
+            <img src="assets/cssSnippet.png" alt="css snippet for the jQuery DrawSVG plugin">
+        </section>
+        <section class="step step5">
+            <h2>Step 5: Write your scripts</h2>
+            <img src="assets/jsSnippet.PNG" alt="js snippet for the jquery DrawSVG plugin">
+        </section>
+        
+    </main>
+
+</body>
+
+</html>
