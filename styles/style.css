@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    height: 2000px;
+    height: 800px;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h2 {
 }
 
 header {
-    background: #a8ff78;
+    background: white;
     padding: 10px 0;
     position: fixed;
     top: 0;
@@ -64,7 +64,7 @@ nav a {
 }
 
 
-.animatedSVG {
+.svg {
     width: 500px;
     height: 500px;
     position: fixed;
